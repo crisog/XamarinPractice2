@@ -20,8 +20,7 @@
                 <local:MenuOptionButtonView 
                     Grid.Row="0" 
                     Grid.Column="0" 
-                    BindingContext="{Binding MenuOptionBars}"
-                    BackgroundColor="{Binding MenuOptionBars.BackgroundColor}">
+                    BindingContext="{Binding MenuOptionBars}">
                     <local:MenuOptionButtonView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Stack_Clicked"/>
                     </local:MenuOptionButtonView.GestureRecognizers>
@@ -30,8 +29,7 @@
                 <local:MenuOptionButtonView 
                     Grid.Row="0" 
                     Grid.Column="1" 
-                     BindingContext="{Binding MenuOptionDining}"
-                    BackgroundColor="{Binding MenuOptionDining.BackgroundColor}">
+                     BindingContext="{Binding MenuOptionDining}">
                     <local:MenuOptionButtonView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Stack_Clicked"/>
                     </local:MenuOptionButtonView.GestureRecognizers>
@@ -40,8 +38,7 @@
                 <local:MenuOptionButtonView 
                     Grid.Row="1" 
                     Grid.Column="0" 
-                     BindingContext="{Binding MenuOptionCafe}"
-                    BackgroundColor="{Binding MenuOptionCafe.BackgroundColor}">
+                     BindingContext="{Binding MenuOptionCafe}">
                     <local:MenuOptionButtonView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Stack_Clicked"/>
                     </local:MenuOptionButtonView.GestureRecognizers>
@@ -49,8 +46,7 @@
 
                 <local:MenuOptionButtonView 
                     Grid.Row="1" 
-                    Grid.Column="1" 
-                    BackgroundColor="{Binding MenuOptionNearby.BackgroundColor}" 
+                    Grid.Column="1"  
                     BindingContext="{Binding MenuOptionNearby}">
                     <local:MenuOptionButtonView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Stack_Clicked"/>
@@ -60,7 +56,6 @@
                 <local:MenuOptionButtonView 
                     Grid.Row="2" 
                     Grid.Column="0" 
-                    BackgroundColor="{Binding MenuOptionFastFood.BackgroundColor}" 
                     BindingContext="{Binding MenuOptionFastFood}">
                     <local:MenuOptionButtonView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Stack_Clicked"/>
@@ -70,8 +65,8 @@
                 <local:MenuOptionButtonView 
                     Grid.Row="2" 
                     Grid.Column="1" 
-                    BackgroundColor="{Binding MenuOptionFeaturedFood.BackgroundColor}" 
-                    BindingContext="{Binding MenuOptionFeaturedFood}">
+                    BindingContext="{Binding MenuOptionFeaturedFood}"
+                    >
                     <local:MenuOptionButtonView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Stack_Clicked"/>
                     </local:MenuOptionButtonView.GestureRecognizers>

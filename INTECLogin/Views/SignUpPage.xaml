@@ -46,30 +46,40 @@
 
             <StackLayout HorizontalOptions="Center" Spacing="5">
                 <Entry
-                    x:Name="emailEntry"
+                    Placeholder="Username"
+                    WidthRequest="300"
+                    Text="{Binding User.Username}"
+                    />
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center" Spacing="5">
+                <Entry
                     Placeholder="Email"
                     Keyboard="Email"
-                    WidthRequest="300" />
+                    WidthRequest="300"
+                    Text="{Binding User.Email}"
+                    />
             </StackLayout>
 
             <StackLayout HorizontalOptions="Center" Spacing="5">
                 <Entry
-                    x:Name="passwordEntry"
                     Placeholder="Password"
                     WidthRequest="300"
-                    IsPassword="True" />
+                    IsPassword="True"
+                    Text="{Binding User.Password}"
+                    />
             </StackLayout>
 
             <StackLayout HorizontalOptions="Center" Spacing="5">
                 <Entry
-                    x:Name="confirmPasswordEntry"
-                    Placeholder="Password"
+                    Placeholder="Confirm Password"
                     WidthRequest="300"
-                    IsPassword="True" />
+                    IsPassword="True"
+                    Text="{Binding User.ConfirmPassword}"
+                    />
             </StackLayout>
 
             <Button
-                x:Name="signUpButton"
                 Text="SIGN UP"
                 BackgroundColor="Red"
                 TextColor="White"

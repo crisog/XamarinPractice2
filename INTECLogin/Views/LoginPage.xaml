@@ -46,22 +46,22 @@
 
             <StackLayout HorizontalOptions="Center" Spacing="5">
                 <Entry
-                    x:Name="emailEntry"
-                    Placeholder="Email"
-                    Keyboard="Email"
-                    WidthRequest="300" />
+                    Placeholder="Username"
+                    WidthRequest="300"
+                    Text="{Binding User.Username}"
+                    />
             </StackLayout>
 
             <StackLayout HorizontalOptions="Center" Spacing="5">
                 <Entry
-                    x:Name="passwordEntry"
                     Placeholder="Password"
                     WidthRequest="300"
-                    IsPassword="True" />
+                    IsPassword="True"
+                    Text="{Binding User.Password}"
+                    />
             </StackLayout>
 
             <Button
-                x:Name="loginButton"
                 Text="LOGIN"
                 BackgroundColor="Red"
                 TextColor="White"
