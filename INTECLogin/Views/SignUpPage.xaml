@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="INTECLogin.MainPage">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="INTECLogin.Views.SignUpPage">
 
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
@@ -59,9 +60,17 @@
                     IsPassword="True" />
             </StackLayout>
 
+            <StackLayout HorizontalOptions="Center" Spacing="5">
+                <Entry
+                    x:Name="confirmPasswordEntry"
+                    Placeholder="Password"
+                    WidthRequest="300"
+                    IsPassword="True" />
+            </StackLayout>
+
             <Button
-                x:Name="loginButton"
-                Text="LOGIN"
+                x:Name="signUpButton"
+                Text="SIGN UP"
                 BackgroundColor="Red"
                 TextColor="White"
                 Clicked="OnButtonClicked"
