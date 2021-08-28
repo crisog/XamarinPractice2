@@ -73,7 +73,7 @@
                 Text="SIGN UP"
                 BackgroundColor="Red"
                 TextColor="White"
-                Clicked="OnButtonClicked"
+                Command="{Binding SignUpCommand}"
                />
         </StackLayout>
         

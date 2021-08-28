@@ -9,7 +9,7 @@ using INTECLogin.Views;
 
 namespace INTECLogin.ViewModels
 {
-    public class LoginPageViewModel : INotifyPropertyChanged
+    public class LoginPageViewModel
     {
         public User User { get; set; } = new User();
         public string DisplayErrorMessage { get; set; } = "";
@@ -52,7 +52,5 @@ namespace INTECLogin.ViewModels
                 }
             });
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

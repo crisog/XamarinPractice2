@@ -10,7 +10,7 @@ namespace INTECLogin
         {
             InitializeComponent();
 
-            MainPage = new Views.LoginPage();
+            MainPage = new Views.MainPage();
         }
 
         protected override void OnStart()

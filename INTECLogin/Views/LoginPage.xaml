@@ -65,8 +65,22 @@
                 Text="LOGIN"
                 BackgroundColor="Red"
                 TextColor="White"
-                Clicked="OnButtonClicked"
+                Command="{Binding LoginCommand}"
                />
+            <Label>
+    <Label.FormattedText>
+        <FormattedString>
+            <Span Text="To sign up, click " />
+            <Span Text="here"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                <Span.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SignUpCommand}" />
+                </Span.GestureRecognizers>
+            </Span>
+        </FormattedString>
+    </Label.FormattedText>
+</Label>
         </StackLayout>
         
         

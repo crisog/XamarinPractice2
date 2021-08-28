@@ -1,9 +1,83 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="INTECLogin.Views.MainPage">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:INTECLogin.Views"
+    x:Class="INTECLogin.Views.MainPage"
+    >
     <ContentPage.Content>
-        <Button></Button>
+        <ScrollView>
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <local:MenuOptionButtonView 
+                    Grid.Row="0" 
+                    Grid.Column="0" 
+                    BindingContext="{Binding MenuOptionBeer}"
+                    BackgroundColor="{Binding MenuOptionBeer.BackgroundColor}">
+                    <local:MenuOptionButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:MenuOptionButtonView.GestureRecognizers>
+                </local:MenuOptionButtonView>
+
+                <local:MenuOptionButtonView 
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                     BindingContext="{Binding MenuOptionDining}"
+                    BackgroundColor="{Binding MenuOptionDining.BackgroundColor}">
+                    <local:MenuOptionButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:MenuOptionButtonView.GestureRecognizers>
+                </local:MenuOptionButtonView>
+
+                <local:MenuOptionButtonView 
+                    Grid.Row="1" 
+                    Grid.Column="0" 
+                     BindingContext="{Binding MenuOptionCafe}"
+                    BackgroundColor="{Binding MenuOptionCafe.BackgroundColor}">
+                    <local:MenuOptionButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:MenuOptionButtonView.GestureRecognizers>
+                </local:MenuOptionButtonView>
+
+                <local:MenuOptionButtonView 
+                    Grid.Row="1" 
+                    Grid.Column="1" 
+                    BackgroundColor="{Binding MenuOptionNearby.BackgroundColor}" 
+                    BindingContext="{Binding MenuOptionNearby}">
+                    <local:MenuOptionButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:MenuOptionButtonView.GestureRecognizers>
+                </local:MenuOptionButtonView>
+
+                <local:MenuOptionButtonView 
+                    Grid.Row="2" 
+                    Grid.Column="0" 
+                    BackgroundColor="{Binding MenuOptionFastFood.BackgroundColor}" 
+                    BindingContext="{Binding MenuOptionFastFood}">
+                    <local:MenuOptionButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:MenuOptionButtonView.GestureRecognizers>
+                </local:MenuOptionButtonView>
+
+                <local:MenuOptionButtonView 
+                    Grid.Row="2" 
+                    Grid.Column="1" 
+                    BackgroundColor="{Binding MenuOptionFeaturedFood.BackgroundColor}" 
+                    BindingContext="{Binding MenuOptionFeaturedFood}">
+                    <local:MenuOptionButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:MenuOptionButtonView.GestureRecognizers>
+                </local:MenuOptionButtonView>
+
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
