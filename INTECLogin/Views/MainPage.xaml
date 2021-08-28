@@ -20,8 +20,8 @@
                 <local:MenuOptionButtonView 
                     Grid.Row="0" 
                     Grid.Column="0" 
-                    BindingContext="{Binding MenuOptionBeer}"
-                    BackgroundColor="{Binding MenuOptionBeer.BackgroundColor}">
+                    BindingContext="{Binding MenuOptionBars}"
+                    BackgroundColor="{Binding MenuOptionBars.BackgroundColor}">
                     <local:MenuOptionButtonView.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Stack_Clicked"/>
                     </local:MenuOptionButtonView.GestureRecognizers>
