@@ -37,19 +37,6 @@ namespace INTECLogin.ViewModels
             {
                 await App.Current.MainPage.Navigation.PushAsync(new SignUpPage());
             });
-
-            PasswordVisibilityCommand = new Command(() =>
-            {
-                IsPassword = !IsPassword ? true : false;
-                if (IsPassword)
-                {
-                    Image = "Icon";
-                }
-                else
-                {
-                    Image = "closeIcon";
-                }
-            });
         }
     }
 }

@@ -32,12 +32,6 @@ namespace INTECLogin.ViewModels
 
             });
 
-            LoginCommand = new Command(async () =>
-            {
-                await App.Current.MainPage.Navigation.PushAsync(new LoginPage());
-
-            });
-
         }
 
     }
