@@ -12,7 +12,6 @@ namespace INTECLogin.ViewModels
     public class LoginPageViewModel
     {
         public User User { get; set; } = new User();
-        public string DisplayErrorMessage { get; set; } = "";
         public bool IsPassword { get; set; }
         public string Image { get; set; } = "Icon";
         public ICommand LoginCommand { get; set; }
@@ -29,7 +28,7 @@ namespace INTECLogin.ViewModels
 
                 else
                 {
-                    DisplayErrorMessage = "Hay campos vacios!";
+                    await App.Current.MainPage.DisplayAlert("Alert", "Todos los campos deben estar llenos.", "OK");
                 }
 
             });
